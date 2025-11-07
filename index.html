@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>11 Virtues of Rational Character</title>
+<style>
+  body { 
+    font-family: 'Segoe UI', sans-serif; 
+    background: #0f0f1a; 
+    color: #e0e0ff; 
+    margin: 0; 
+    padding: 2rem 1rem;
+    line-height: 1.7;
+  }
+  h1 { 
+    text-align: center; 
+    color: #8be9fd; 
+    margin-bottom: 3rem; 
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  .container { max-width: 600px; margin: 0 auto; }
+  .card {
+    background: rgba(40, 42, 74, 0.95);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+  }
+  .card:hover { 
+    transform: translateY(-6px); 
+    box-shadow: 0 20px 40px rgba(139,233,253,0.25); 
+  }
+  .card h2 {
+    margin: 0;
+    padding: 2rem 1.2rem 1rem;
+    font-size: 1.7rem;
+    color: #ff79c6;
+    text-align: center;
+    font-weight: 600;
+  }
+  .details {
+    padding: 0 1.2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease, padding 0.6s ease;
+    background: rgba(68, 71, 90, 0.8);
+  }
+  .details.open { 
+    max-height: 700px; 
+    padding: 1.2rem 1.2rem 2rem;
+  }
+  .details ul { 
+    margin: 0; 
+    padding-left: 1.4rem; 
+    list-style: none;
+  }
+  .details li { 
+    margin: 1.1rem 0;
+    padding-left: 0.5rem;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.5s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    color: #ffb86c;
+    font-size: 0.95rem;
+  }
+  .details.open li { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+  .details.open li:nth-child(1) { transition-delay: 0.1s; }
+  .details.open li:nth-child(2) { transition-delay: 0.2s; }
+  .details.open li:nth-child(3) { transition-delay: 0.3s; }
+  .details.open li:nth-child(4) { transition-delay: 0.4s; }
+</style>
+</head>
+<body>
+<h1>11 Virtues of Rational Character</h1>
+<div class="container">
+
+  <div class="card" onclick="toggle(this)">
+    <h2>Critical Thinking</h2>
+    <div class="details">
+      <ul>
+        <li>real-time monitoring of own thinking</li>
+        <li>reasoning that holds up to challenge and stays consistent</li>
+        <li>reduce bias via monitoring of own thinking</li>
+        <li>contradiction-free conclusions</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" onclick="toggle(this)">
+    <h2>Sense-Making</h2>
+    <div class="details">
+      <ul>
+        <li>single contradiction-free narrative</li>
+        <li>metacognition treated as evidence</li>
+        <li>assimilate allocentric perspectives</li>
+        <li>decisions run on tested mental models</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" onclick="toggle(this)">
+    <h2>Self-Control</h2>
+    <div class="details">
+      <ul>
+        <li>inhibit impulsive actions</li>
+        <li>delay gratification as default exchange</li>
+        <li>goal pursuit without hedonic reward</li>
+        <li>maintain selective attention despite noise</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" onclick="toggle(this)">
+    <h2>Fairness</h2>
+    <div class="details">
+      <ul>
+        <li>equity = contribution ± need</li>
+        <li>engage in relational repair</li>
+        <li>uphold effort reciprocity</li>
+        <li>enforce rules with universality</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" onclick="toggle(this)">
+    <h2>Impartiality</h2>
+    <div class="details">
+      <ul>
+        <li>anchor judgments in empirical facts</li>
+        <li>logic survives name-blank test</li>
+        <li>debiasing: pre-mortem / steel-man / outside view</li>
+        <li>intellectual humility rises as data falls</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" onclick="toggle(this)">
+    <h2>Strength & Courage</h2>
+    <div class="details">
+      <ul>
+        <li>endure distress tolerance</li>
+        <li>confront phobias via exposure</li>
+        <li>stress inoculation via graduated load</li>
+        <li>anti-fragility gained from controlled stressors</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" onclick="toggle(this)">
+    <h2>Autonomy</h2>
+    <div class="details">
+      <ul>
+        <li>choices guided by eudaimonic values</li>
+        <li>integrity overrides conformity pressure</li>
+        <li>exercise moral agency</li>
+        <li>harm never offloaded for gain</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" onclick="toggle(this)">
+    <h2>Self-Confidence</h2>
+    <div class="details">
+      <ul>
+        <li>self-efficacy built on verifiable wins</li>
+        <li>successful performances fused into identity</li>
+        <li>observed successes converted into personal performance trials</li>
+        <li>setbacks read as skill deficits only</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" onclick="toggle(this)">
+    <h2>Persistence</h2>
+    <div class="details">
+      <ul>
+        <li>perseverance after affect flatlines</li>
+        <li>obstacles treated as puzzles</li>
+        <li>momentum via daily compound actions</li>
+        <li>self-monitoring of lag/lead indicators</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" onclick="toggle(this)">
+    <h2>Moderation</h2>
+    <div class="details">
+      <ul>
+        <li>arousal held in optimal zone</li>
+        <li>parasympathetic rebound within hours</li>
+        <li>allocate resources via Pareto principle</li>
+        <li>ego depletion detected at performance dip</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" onclick="toggle(this)">
+    <h2>Self-Reflection</h2>
+    <div class="details">
+      <ul>
+        <li>daily introspection</li>
+        <li>experiences distilled to if-then rule</li>
+        <li>label current emotion with one word</li>
+        <li>immediate behavioral calibration</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function toggle(card) {
+  const details = card.querySelector('.details');
+  const isOpen = details.classList.contains('open');
+  document.querySelectorAll('.details').forEach(d => d.classList.remove('open'));
+  if (!isOpen) details.classList.add('open');
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.details').forEach(d => d.classList.remove('open'));
+  }
+});
+</script>
+</body>
+</html>
